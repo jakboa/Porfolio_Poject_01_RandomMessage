@@ -19,7 +19,7 @@ const randomStringGenerator = (startPart, middlePart, stopPart) => `${startPart}
 
 console.log(randomStringGenerator(randomStartPart, randomMiddlePart, randomStopPart));
 
-
+let tring = "tring";
 
 
 
