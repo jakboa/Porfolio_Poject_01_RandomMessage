@@ -1,10 +1,16 @@
-const startMessage = [" A"," B","C"," D","E","F","G"];
+
+
+
+const startMessage = ["Everbody agrees that","Nobody thinks that","And thus, no one foresaw that",
+    "Why is it that","Hopefully, nobody notices that","Dont you hate it that","They yelled that",
+    "It was foretold that","Dont you love it that","You always say that"];
 const randomStartPart = startMessage[Math.floor(Math.random()*startMessage.length)];
 
-const middleMessage = ["1","2","3","4","5","6","7"];
+const middleMessage = ["bears","turtles","pigeons","cats","dogs","elephants","tigers","rhinoceroses","whales","sharks"];
 const randomMiddlePart = middleMessage[Math.floor(Math.random()*middleMessage.length)];
 
-const stopMessage = ["is cool.","is fancy.","is smart.","is badass.","is tha bomb.","is kay.","is mid."];
+const stopMessage = ["are cool.","are fancy.","are smart.","are badass.","are tha bomb.","are okay.",
+    "are mid.","are the bestest","are my favorite","are right behind you."];
 const randomStopPart = stopMessage[Math.floor(Math.random()*stopMessage.length)];
 
 
@@ -12,3 +18,8 @@ const randomStringGenerator = (startPart, middlePart, stopPart) => `${startPart}
 
 
 console.log(randomStringGenerator(randomStartPart, randomMiddlePart, randomStopPart));
+
+
+
+
+
