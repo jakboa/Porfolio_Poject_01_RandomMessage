@@ -10,3 +10,16 @@ const testsomething = (starter, stopper) => {
 }
 
 console.log(testsomething(startMessage[Math.floor(Math.random()*startMessage.length)],testVar))
+
+
+
+let more = 65;
+let texter = "Hello"
+
+
+for (let i = 0; i < more ;i++) {
+    texter = texter + "o";
+}
+
+console.log(texter)
+
