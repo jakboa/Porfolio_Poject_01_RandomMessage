@@ -1,22 +1,14 @@
-const stopMes = [" is cool."," is fancy."," is smart."," is badass."," is tha bomb."," is kay."," is mid."];
+const startMessage = [" A"," B","C"," D","E","F","G"];
+const randomStartPart = startMessage[Math.floor(Math.random()*startMessage.length)];
 
-let why = "Sekiro"; 
+const middleMessage = ["1","2","3","4","5","6","7"];
+const randomMiddlePart = middleMessage[Math.floor(Math.random()*middleMessage.length)];
 
-function naem(rando,ending) {
-    return `${rando}${ending}`;
-};
+const stopMessage = ["is cool.","is fancy.","is smart.","is badass.","is tha bomb.","is kay.","is mid."];
+const randomStopPart = stopMessage[Math.floor(Math.random()*stopMessage.length)];
 
-console.log(naem(why,stopMes[Math.floor(Math.random()*stopMes.length)]));
 
-const justCheck = 0;
+const randomStringGenerator = (startPart, middlePart, stopPart) => `${startPart} ${middlePart} ${stopPart}`;
 
-const startMessage = ["Its looking like ","It all began ","Then there was ","Suprisingly it was ","Nobody saw that it was "];
-let testVar = "Ello!";
 
-const testsomething = (starter, stopper) => {
-    if (1+ 2 === 4) {
-        return "The world is ending";
-    } else {return starter + stopper}
-}
-
-console.log(testsomething(startMessage[Math.floor(Math.random()*startMessage.length)],testVar));
+console.log(randomStringGenerator(randomStartPart, randomMiddlePart, randomStopPart));
