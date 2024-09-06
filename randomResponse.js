@@ -6,6 +6,9 @@ const phraseMethod = (partArray) => {
         randomPart() {
             return this.partInfo[Math.floor(Math.random()*this.partLength)];
         },
+        AddMore(textToAdd) {
+            this.partInfo.push(textToAdd);
+        }
 
     }
 }
@@ -20,9 +23,16 @@ const startMessage2 = phraseMethod(["Everbody agrees that","Nobody thinks that",
 const middleMessage2 = phraseMethod(["bears","turtles","pigeons","cats","dogs","elephants","tigers","rhinoceroses","whales","sharks"]);
 
 const stopMessage2 = phraseMethod(["are cool.","are fancy.","are smart.","are badass.","are tha bomb.","are okay.",
-    "are mid.","are the bestest","are my favorite","are right behind you."]);
+    "are mid.","are the bestest.","are my favorite.","are right behind you."]);
 
+combinedParts.push(startMessage2.randomPart())
+combinedParts.push(middleMessage2.randomPart())
+combinedParts.push(stopMessage2.randomPart())    
 
-combineParts(startMessage2.randomPart(),middleMessage2.randomPart(),stopMessage2.randomPart());
+console.log(combinedParts.join(" "));
+
+stopMessage2.AddMore("THIS IS TEST TEXT!");
+
+console.log(stopMessage2.partInfo)
 
 
